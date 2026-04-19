@@ -13,10 +13,6 @@
 
 <nav id="nav">
   <a href="#" class="nav-logo">Temi Sodipo</a>
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#resume">Resume</a></li>
-  </ul>
   <div style="display:flex;align-items:center;gap:0.75rem">
     <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
       <svg class="icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"/></svg>
@@ -34,11 +30,11 @@
     <h1 class="hero-headline">Building systems that <em>protect, scale,</em> and recover value.</h1>
     <p class="hero-sub">End-to-end credits and payments lifecycle capability spanning underwriting, collections, and recovery. Fraud controls and AI governance embedded into operational decisions.</p>
     <div class="hero-actions">
-      <a href="https://linkedin.com" target="_blank" rel="noopener" class="btn-primary">
+      <a href="https://www.linkedin.com/in/temi-sodipo/" target="_blank" rel="noopener" class="btn-primary">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
         Connect on LinkedIn
       </a>
-      <a href="mailto:hello@example.com" class="btn-ghost">Send an email <span class="arr">→</span></a>
+      <a href="mailto:temi@temisodipo.com" class="btn-ghost">Send an email <span class="arr">→</span></a>
     </div>
   </div>
   <div class="hero-wave-wrap">
@@ -58,21 +54,23 @@
 
 <!-- STATS STRIP -->
 <div class="hero-stats">
-  <div>
-    <div class="stat-num">Full</div>
-    <div class="stat-label">Risk value chain ownership</div>
-  </div>
-  <div>
-    <div class="stat-num">AI+</div>
-    <div class="stat-label">Governance-first automation</div>
-  </div>
-  <div>
-    <div class="stat-num">Payments</div>
-    <div class="stat-label">End-to-end lifecycle coverage</div>
-  </div>
-  <div>
-    <div class="stat-num">SQL/Py</div>
-    <div class="stat-label">Hands-on analytical decisioning</div>
+  <div class="hero-stats-inner">
+    <div>
+      <div class="stat-num">Full</div>
+      <div class="stat-label">Risk value chain ownership</div>
+    </div>
+    <div>
+      <div class="stat-num">AI+</div>
+      <div class="stat-label">Governance-first automation</div>
+    </div>
+    <div>
+      <div class="stat-num">Payments</div>
+      <div class="stat-label">End-to-end lifecycle coverage</div>
+    </div>
+    <div>
+      <div class="stat-num">SQL/Py</div>
+      <div class="stat-label">Hands-on analytical decisioning</div>
+    </div>
   </div>
 </div>
 
@@ -165,15 +163,53 @@
       <span class="section-label">Strategic Projects</span>
     </div>
     <h2 class="section-h2 reveal">Recent analytical<br>and <em style="font-style:italic;color:var(--gray-600)">strategic work.</em></h2>
-    <div class="projects-grid reveal">
-      <div class="row">
-        <div class="project-card featured">
-          <div class="proj-header">
-            <span class="proj-index">01</span>
-            <span class="proj-badge">Modelling</span>
+
+    <div class="proj-accordion reveal">
+      <!-- LEFT: clickable list -->
+      <div class="proj-list">
+        <div class="proj-list-item active" data-proj="0" onclick="selectProject(0)">
+          <span class="proj-list-num">01</span>
+          <div class="proj-list-body">
+            <span class="proj-list-badge">Modelling</span>
+            <span class="proj-list-title">Delinquency &amp; Roll-Rate Prediction</span>
           </div>
-          <div class="proj-label">Behavioural</div>
-          <div class="proj-title">Delinquency &amp; Roll-Rate Prediction</div>
+          <span class="proj-list-arrow">→</span>
+        </div>
+        <div class="proj-list-item" data-proj="1" onclick="selectProject(1)">
+          <span class="proj-list-num">02</span>
+          <div class="proj-list-body">
+            <span class="proj-list-badge">Fraud</span>
+            <span class="proj-list-title">Fraud Detection &amp; Rule Architecture</span>
+          </div>
+          <span class="proj-list-arrow">→</span>
+        </div>
+        <div class="proj-list-item" data-proj="2" onclick="selectProject(2)">
+          <span class="proj-list-num">03</span>
+          <div class="proj-list-body">
+            <span class="proj-list-badge">AI</span>
+            <span class="proj-list-title">AI Underwriting Strategy with Operations Lens</span>
+          </div>
+          <span class="proj-list-arrow">→</span>
+        </div>
+        <div class="proj-list-item" data-proj="3" onclick="selectProject(3)">
+          <span class="proj-list-num">04</span>
+          <div class="proj-list-body">
+            <span class="proj-list-badge">Regulatory</span>
+            <span class="proj-list-title">Regulatory Policy Translated to Operations</span>
+          </div>
+          <span class="proj-list-arrow">→</span>
+        </div>
+      </div>
+
+      <!-- RIGHT: detail panel -->
+      <div class="proj-detail">
+        <div class="proj-panel active" data-proj="0">
+          <div class="proj-panel-meta">
+            <span class="proj-panel-num">01</span>
+            <span class="proj-panel-badge">Modelling</span>
+          </div>
+          <div class="proj-panel-label">Behavioural</div>
+          <div class="proj-panel-title">Delinquency &amp; Roll-Rate Prediction</div>
           <p>Predicting and managing outcomes across the credit journey. Delinquency risk, roll-rate movement, and cure likelihood converted into operational actions and policy thresholds that frontline teams can act on.</p>
           <div class="proj-tags">
             <span class="proj-tag">Python</span>
@@ -181,13 +217,13 @@
             <span class="proj-tag">Policy Thresholds</span>
           </div>
         </div>
-        <div class="project-card">
-          <div class="proj-header">
-            <span class="proj-index">02</span>
-            <span class="proj-badge">Fraud</span>
+        <div class="proj-panel" data-proj="1">
+          <div class="proj-panel-meta">
+            <span class="proj-panel-num">02</span>
+            <span class="proj-panel-badge">Fraud</span>
           </div>
-          <div class="proj-label">Strategy</div>
-          <div class="proj-title">Fraud Detection &amp; Rule Architecture</div>
+          <div class="proj-panel-label">Strategy</div>
+          <div class="proj-panel-title">Fraud Detection &amp; Rule Architecture</div>
           <p>Detection, prevention, and response spanning rule logic design, threshold tuning, and escalation flows. Reduced loss while actively managing false positives and customer friction.</p>
           <div class="proj-tags">
             <span class="proj-tag">Rule Writing</span>
@@ -195,15 +231,13 @@
             <span class="proj-tag">False Positive Mgmt</span>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="project-card">
-          <div class="proj-header">
-            <span class="proj-index">03</span>
-            <span class="proj-badge">AI</span>
+        <div class="proj-panel" data-proj="2">
+          <div class="proj-panel-meta">
+            <span class="proj-panel-num">03</span>
+            <span class="proj-panel-badge">AI</span>
           </div>
-          <div class="proj-label">Underwriting</div>
-          <div class="proj-title">AI Underwriting Strategy with Operations Lens</div>
+          <div class="proj-panel-label">Underwriting</div>
+          <div class="proj-panel-title">AI Underwriting Strategy with Operations Lens</div>
           <p>Ensuring underwriting innovation is deployable, monitorable, and explainable enough for governance. Treating models as living systems requiring drift monitoring and accountable ownership structures.</p>
           <div class="proj-tags">
             <span class="proj-tag">Model Governance</span>
@@ -211,13 +245,13 @@
             <span class="proj-tag">Explainability</span>
           </div>
         </div>
-        <div class="project-card">
-          <div class="proj-header">
-            <span class="proj-index">04</span>
-            <span class="proj-badge">Regulatory</span>
+        <div class="proj-panel" data-proj="3">
+          <div class="proj-panel-meta">
+            <span class="proj-panel-num">04</span>
+            <span class="proj-panel-badge">Regulatory</span>
           </div>
-          <div class="proj-label">Policy</div>
-          <div class="proj-title">Regulatory Policy Translated to Operations</div>
+          <div class="proj-panel-label">Policy</div>
+          <div class="proj-panel-title">Regulatory Policy Translated to Operations</div>
           <p>Building rules, procedures, documentation, and reporting that stand up to scrutiny. Strong data governance expectations for accuracy, integrity, and board-level oversight.</p>
           <div class="proj-tags">
             <span class="proj-tag">Documentation</span>
@@ -226,19 +260,18 @@
           </div>
         </div>
       </div>
-      <div class="row chat-row" style="grid-template-columns:1fr">
-        <div class="project-card chat-card">
-          <p class="chat-label">Want to chat?</p>
-          <h3 class="chat-headline">Let's talk through your risk,<br>fraud, or payments challenge.</h3>
-          <p class="chat-sub">No formal proposals needed. Start with a conversation — free consultations available for the right problems.</p>
-          <div class="chat-actions">
-            <a href="https://linkedin.com" target="_blank" rel="noopener" class="btn-primary">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-              Connect on LinkedIn
-            </a>
-            <a href="mailto:hello@example.com" class="btn-ghost">Send an email <span class="arr">→</span></a>
-          </div>
-        </div>
+    </div>
+
+    <!-- CHAT CARD -->
+    <div class="chat-card reveal">
+      <p class="chat-label">Want to chat?</p>
+      <h3 class="chat-headline">Let's talk through your risk,<br>fraud, or payments challenge.</h3>
+      <div class="chat-actions">
+        <a href="https://www.linkedin.com/in/temi-sodipo/" target="_blank" rel="noopener" class="btn-primary">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          Connect on LinkedIn
+        </a>
+        <a href="mailto:temi@temisodipo.com" class="btn-ghost" style="color:rgba(255,255,255,0.6)">Send an email <span class="arr">→</span></a>
       </div>
     </div>
   </div>
@@ -319,7 +352,7 @@
           <li class="about-item">Build operating models that balance growth and protection consistently, not just in documentation.</li>
           <li class="about-item">Control-aware worldview: fraud and credit loss are operational realities, driven by process gaps.</li>
         </ul>
-        <a href="https://linkedin.com" class="about-linkedin" target="_blank" rel="noopener">
+        <a href="https://www.linkedin.com/in/temi-sodipo/" class="about-linkedin" target="_blank" rel="noopener">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
           View LinkedIn profile
         </a>
@@ -348,12 +381,12 @@
     <p class="contact-eyebrow reveal">Start a conversation</p>
     <h2 class="contact-headline reveal">Got a problem worth<br><em>talking through?</em></h2>
     <div class="contact-actions reveal">
-      <a href="https://linkedin.com" target="_blank" rel="noopener" class="btn-primary contact-btn-primary">
+      <a href="https://www.linkedin.com/in/temi-sodipo/" target="_blank" rel="noopener" class="btn-primary contact-btn-primary">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
         Connect on LinkedIn
       </a>
-      <a href="mailto:hello@example.com" class="contact-link">
-        hello@example.com <span>→</span>
+      <a href="mailto:temi@temisodipo.com" class="contact-link">
+        temi@temisodipo.com <span>→</span>
       </a>
     </div>
   </div>
@@ -363,7 +396,7 @@
 <footer>
   <span class="footer-copy">© 2025 Temi. All rights reserved.</span>
   <ul class="footer-links">
-    <li><a href="https://linkedin.com">LinkedIn</a></li>
+    <li><a href="https://www.linkedin.com/in/temi-sodipo/">LinkedIn</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>

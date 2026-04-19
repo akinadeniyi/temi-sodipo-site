@@ -30,6 +30,16 @@ document.querySelectorAll('.reveal').forEach((el, i) => {
   observer.observe(el);
 });
 
+// PROJECT ACCORDION
+function selectProject(index) {
+  document.querySelectorAll('.proj-list-item').forEach(el => el.classList.remove('active'));
+  document.querySelectorAll('.proj-panel').forEach(el => el.classList.remove('active'));
+  const listItem = document.querySelector(`.proj-list-item[data-proj="${index}"]`);
+  const panel = document.querySelector(`.proj-panel[data-proj="${index}"]`);
+  if (listItem) listItem.classList.add('active');
+  if (panel) panel.classList.add('active');
+}
+
 function toggleFaq(btn) {
   const item = btn.parentElement;
   const isOpen = item.classList.contains('open');
