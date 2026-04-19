@@ -37,7 +37,13 @@ function selectProject(index) {
   const listItem = document.querySelector(`.proj-list-item[data-proj="${index}"]`);
   const panel = document.querySelector(`.proj-panel[data-proj="${index}"]`);
   if (listItem) listItem.classList.add('active');
-  if (panel) panel.classList.add('active');
+  if (panel) {
+    panel.classList.add('active');
+    // On mobile, scroll the detail panel into view
+    if (window.innerWidth <= 860) {
+      panel.closest('.proj-detail').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  }
 }
 
 function toggleFaq(btn) {

@@ -232,11 +232,16 @@ footer{padding:2rem var(--pad);border-top:1px solid var(--gray-200);display:flex
 @media(max-width:860px){
   .chain{grid-template-columns:1fr 1fr;grid-template-rows:auto auto auto}
   .capabilities{grid-template-columns:1fr}
-  .proj-accordion{grid-template-columns:1fr}
+  .proj-accordion{grid-template-columns:1fr;overflow:hidden}
   .proj-list{border-right:none;border-bottom:1px solid var(--gray-200)}
-  .proj-detail{min-height:0}
-  .proj-panel{position:relative;inset:auto;opacity:0;height:0;overflow:hidden;padding:0;pointer-events:none;transition:opacity 0.3s,height 0.3s}
-  .proj-panel.active{opacity:1;height:auto;padding:1.5rem;pointer-events:auto}
+  .proj-list-body{min-width:0}
+  .proj-list-title{display:block;white-space:normal;word-break:break-word}
+  .proj-list-arrow{display:none}
+  .proj-list-item{padding:1.25rem 1.25rem}
+  .proj-detail{min-height:0;display:block}
+  .proj-panel{position:relative;inset:auto;display:none;padding:1.5rem;pointer-events:none}
+  .proj-panel.active{display:block;opacity:1;pointer-events:auto}
+  .proj-panel-card{border-radius:0.75rem}
   .tech-layout,.faq-layout{grid-template-columns:1fr;gap:2.5rem}
   .tech-intro,.faq-intro{position:static}
   .about-layout{grid-template-columns:1fr;gap:3rem}
