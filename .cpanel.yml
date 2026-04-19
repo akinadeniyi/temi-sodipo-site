@@ -2,7 +2,7 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/temisodi/public_html/
-    - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp styles.css $DEPLOYPATH
-    - /bin/cp scripts.js $DEPLOYPATH
-    - /bin/cp -r images $DEPLOYPATH
+    - /bin/cp -f index.html $DEPLOYPATH
+    - /bin/cp -f styles.css $DEPLOYPATH
+    - /bin/cp -f scripts.js $DEPLOYPATH
+    - /bin/cp -rf images $DEPLOYPATH
