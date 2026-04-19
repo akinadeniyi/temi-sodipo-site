@@ -136,7 +136,7 @@ section{padding:7rem var(--pad)}
 .proj-panel .proj-tag{font-size:0.75rem;border:1px solid #E4E3E0;color:#706F6A;padding:0.25rem 0.6rem;border-radius:2rem;background:#fff}
 
 /* Chat card (standalone below accordion) */
-.chat-card{background:#0A0A0A!important;color:#fff!important;padding:3rem 2.5rem;display:flex;flex-direction:column;gap:1rem;margin-top:1px;border-radius:0.75rem}
+.chat-card{background:#0A0A0A!important;color:#fff!important;padding:3rem 2.5rem;display:flex;flex-direction:column;gap:1rem;margin-top:2.5rem;border-radius:0.75rem}
 
 /* TECH */
 #technical{border-bottom:1px solid var(--gray-200)}
