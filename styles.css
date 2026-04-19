@@ -161,8 +161,10 @@ section{padding:7rem var(--pad)}
 .about-label{font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-bottom:2rem}
 .about-headline{font-family:var(--serif);font-size:clamp(2rem,3.5vw,3rem);letter-spacing:-0.02em;line-height:1.15;margin-bottom:2.5rem;color:#fff}
 .about-headline em{font-style:italic;color:rgba(255,255,255,0.5)}
-.about-list{list-style:none;display:flex;flex-direction:column;gap:1rem;margin-bottom:2.5rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.1)}
-.about-item{font-size:1rem;color:rgba(255,255,255,0.7);line-height:1.65;padding-left:1rem;border-left:2px solid rgba(255,255,255,0.15)}
+.about-list{list-style:none;display:flex;flex-direction:column;margin-bottom:2.5rem;border-top:1px solid rgba(255,255,255,0.1)}
+.about-item{display:flex;align-items:center;justify-content:space-between;gap:2rem;padding:1.25rem 0;border-bottom:1px solid rgba(255,255,255,0.1)}
+.about-item-text{font-size:1rem;color:rgba(255,255,255,0.7);line-height:1.6}
+.about-item-num{font-size:0.75rem;color:rgba(255,255,255,0.3);letter-spacing:0.08em;flex-shrink:0;font-variant-numeric:tabular-nums}
 .about-linkedin{display:inline-flex;align-items:center;gap:0.5rem;color:rgba(255,255,255,0.6);font-size:0.875rem;text-decoration:none;border:1px solid rgba(255,255,255,0.2);padding:0.55rem 1.1rem;border-radius:2rem;transition:color 0.2s,border-color 0.2s}
 .about-linkedin:hover{color:#fff;border-color:rgba(255,255,255,0.5)}
 .about-right{display:flex;align-items:center;justify-content:center}
