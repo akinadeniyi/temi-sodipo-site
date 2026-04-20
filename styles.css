@@ -45,7 +45,7 @@ section{padding:7rem var(--pad)}
 #hero{padding-top:7rem;padding-bottom:0;border-bottom:none;text-align:center}
 #hero .inner{padding-bottom:2rem}
 .hero-wave-wrap{width:calc(100% + 2 * var(--pad));margin-left:calc(-1 * var(--pad));margin-right:calc(-1 * var(--pad));height:280px;overflow:hidden;line-height:0;position:relative}
-.hero-wave-bg{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:100%;min-width:900px;height:auto;display:block}
+.hero-wave-bg{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:100%;min-width:1500px;height:auto;display:block}
 .hero-avatar{width:80px;height:80px;border-radius:50%;object-fit:cover;object-position:center top;display:block;margin:0 auto 2.5rem;opacity:0;animation:fadeUp 0.7s 0.1s forwards}
 .hero-eyebrow{font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray-600);margin-bottom:1.5rem;opacity:0;animation:fadeUp 0.7s 0.2s forwards}
 .hero-headline{font-family:var(--serif);font-size:clamp(2.2rem,4.5vw,4.2rem);line-height:1.22;letter-spacing:-0.02em;max-width:820px;margin:0 auto 1.5rem;opacity:0;animation:fadeUp 0.7s 0.35s forwards}
